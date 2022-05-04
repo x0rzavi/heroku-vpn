@@ -5,6 +5,12 @@
     "logo": "https://telegra.ph/file/4a7edc75997dd3123977d.png",
     "keywords": ["vpn", "tailscale", "wireguard", "heroku"],
     "success_url": "/",
+    "stack": "container",
+    "formation": {
+        "web": {
+          "quantity": 1
+        }
+    },
     "env": {
         "TAILSCALE_AUTHKEY": {
           "description": "Tailscale pre-authentication key to be used for non-interactive login.",
