@@ -1,9 +1,9 @@
 <h1 align="center">Heroku VPN</h1>
-<h2 align="center">Easily spinup an ephemeral VPN on heroku using tailscale under the hood</h2><br>
+<h2 align="center">Easily spin up an ephemeral VPN on heroku using tailscale under the hood</h2><br>
 
 ### Disclaimer:
-<code>NEITHER me NOR this project shall be in any way held responsible if your account gets banned. It is YOUR sole
-reponsibility to use this project in whatever way you may want. However I totally recommend AGAINST abusing these 
+<code>NEITHER me NOR this project shall be in any way held responsible if YOUR ACCOUNT gets banned. It is YOUR sole
+reponsibility to use this project in whatever way you may want. However I totally recommend AGAINST ABUSING these 
 services with excessive usage.</code><br>
 ### Prerequisites:
 - Free [Heroku](https://www.heroku.com/home) account
@@ -35,6 +35,7 @@ with an appropriate value from **Users** tab.
     ![4](/assets/4.png)
     ![7](/assets/7.png)
 4. Go to **Keys** section in **Settings** tab and generate an **auth key**. Paste this key into heroku when asked for.
+Also save it for future use.
 
     ![5](/assets/5.png)
     ![6](/assets/6.png)<br>
@@ -54,11 +55,13 @@ with an appropriate value from **Users** tab.
     ![D](/assets/D.jpeg)<br>
 ### Notes:
 - Make sure, you have followed the steps as precisely as possible.
-- As always, heroku dynos will sleep after a certain amount of time. This repo has no hardcoded way to circumvent that (who needs a VPN 24/7 anyways?) but it does serve a site which you can ping. So, it is totally upto YOU how you want to keep it running. Few utilities worth noting are: 
+- As always, heroku dynos will sleep after a certain amount of time. This repo has no hardcoded way to circumvent that (who needs a VPN 24/7 anyways ?) but it does serve a site which you can ping. So, it is totally upto YOU how you want to keep it running. Few utilities worth noting are: 
   - https://kaffeine.herokuapp.com/
   - https://cron-job.org/en/
 - Each time your heroku app restarts, a new machine will pop up in tailscale dashboard and the old offline ones will disappear eventually. YOU have to make sure to choose the correct exit node each time, failing which will block your internet.
 - **[Tailscale](https://tailscale.com/)** is a great tool in itself with extensive documention, make sure to try it.<br>
-
-### Contact :
-- [Telegram](https://telegram.dog/mishizu)
+### Todo:
+- V2 with native wireguard implementation. (iff possible)
+- Support for VPN on github-actions.<br>
+### Contact:
+- [Telegram](https://t.me/mishizu)
