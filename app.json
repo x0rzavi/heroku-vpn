@@ -1,0 +1,14 @@
+{
+    "name": "Ephermeral VPN",
+    "description": "Easily spinup an ephemeral VPN on heroku using Tailscale under the hood",
+    "repository": "https://github.com/x0rzavi/ephemeral-vpn",
+    "logo": "https://telegra.ph/file/4a7edc75997dd3123977d.png",
+    "keywords": ["vpn", "tailscale", "wireguard", "heroku"],
+    "success_url": "/",
+    "env": {
+        "TAILSCALE_AUTHKEY": {
+          "description": "Tailscale pre-authentication key to be used for non-interactive login.",
+          "required": "true"
+        }
+    }
+}
